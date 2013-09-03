@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgstates2"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:textColor="#87F717"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewWrongAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wrong Ans"
+            android:textColor="#FF00FF"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/TextView02"
+            android:textColor="@color/w"
+            android:textSize="18dp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" >
+
+            <Button
+                android:id="@+id/try_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0"
+                android:background="@drawable/green_button"
+                android:text="Try Again"
+                android:textColor="@color/w" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_buttomOfRes"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TV_WhatYouMissed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here are those you missed:"
+                android:textColor="#FFFF00"
+                android:textSize="20sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TV_TapToView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="(Tap on the name to view Image)"
+                android:textColor="#FFFF00"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:choiceMode="none"
+                android:clickable="false"
+                android:divider="@color/w"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:hapticFeedbackEnabled="false"
+                android:headerDividersEnabled="false"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:scrollbars="vertical" >
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

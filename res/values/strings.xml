@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MinSDK">7</string>
+<color name="w">#FFFFFF</color>
+<string name="app_name">States</string>
+
+</resources>

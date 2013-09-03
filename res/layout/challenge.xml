@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/bgstates2">
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:orientation="vertical" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight=".4"><ImageSwitcher android:id="@+id/ImageSwitcher01" android:background="@drawable/usa_map" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight=".2"></ImageSwitcher>
+
+
+
+
+
+<LinearLayout android:id="@+id/LinearLayout03" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_weight="1"><TextView android:text="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TextViewStatusTitle"></TextView><ProgressBar android:id="@+id/ProgressBar01" android:layout_height="wrap_content" android:max="100" android:indeterminate="false" style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent" android:layout_marginRight="5px" android:layout_marginLeft="5px"></ProgressBar>
+
+
+</LinearLayout>
+
+
+</LinearLayout>
+<LinearLayout android:orientation="vertical" android:gravity="right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/LinearLayoutOptionButtons" android:layout_weight="1">
+<Button android:text="opt1" android:id="@+id/Option1" android:textColor="@color/w" android:textColorHighlight="@color/w" android:textColorHint="@color/w" android:textColorLink="@color/w" android:background="@drawable/bluebut" android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+<Button android:text="opt2" android:id="@+id/Option2" android:textColor="@color/w" android:background="@drawable/bluebut" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent"></Button>
+<Button android:text="opt3" android:id="@+id/Option3" android:textColor="@color/w" android:background="@drawable/bluebut" android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent"></Button>
+<Button android:text="opt4" android:id="@+id/Option4" android:textColor="@color/w" android:background="@drawable/bluebut" android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="fill_parent"></Button>
+<Button android:text="Finn" android:id="@+id/Option5" android:textColor="@color/w" android:background="@drawable/redbut" android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1"></Button>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.k1.pack.statesFree" android:versionName="2.1" android:versionCode="3">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:label="@string/app_name" android:icon="@drawable/logo1" android:debuggable="true">
+<activity android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:name="Start" android:finishOnCloseSystemDialogs="true" android:noHistory="false">
+            
+       
+<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+</activity>
+
+    <activity android:name="StartChallenge" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
+<activity android:name="Challenge" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
+<activity android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:name="Res" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
+<activity android:name="BestScores" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
+<activity android:name="Description" android:label="@string/app_name" android:screenOrientation="landscape" android:noHistory="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout"></activity>
+<activity android:name="NasionalAlanthem" android:noHistory="true" android:label="@string/app_name" android:screenOrientation="landscape"></activity>
+<activity android:name="ResForFullAnswer" android:noHistory="true" android:label="@string/app_name" android:screenOrientation="landscape"></activity>
+</application>
+
+
+<uses-sdk android:targetSdkVersion="17" android:minSdkVersion="7"></uses-sdk>
+</manifest> 
