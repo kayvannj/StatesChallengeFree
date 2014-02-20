@@ -24,14 +24,6 @@ public class Start extends MainActivity implements OnClickListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		final Window win = getWindow();
-
-		// No Status bar
-		win.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-		// No Title bar
-		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		requestWindowFeature(Window.FEATURE_PROGRESS);
-
 		initLayout();
 
 		mixpanel = MixpanelAPI.getInstance(this, GlobalParams.MIXPANEL_TOKEN);
@@ -53,11 +45,6 @@ public class Start extends MainActivity implements OnClickListener {
 		mnasional.setOnClickListener(this);
 	}
 
-	private void launchActivityFromClass(Class ac) {
-		Intent i = new Intent(this, ac);
-		startActivity(i);
-	}
-
 	@Override
 	protected void onDestroy() {
 		mixpanel.flush();
@@ -69,17 +56,17 @@ public class Start extends MainActivity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 			case R.id.btgotochalenge:
-				launchActivityFromClass(StartChallenge.class);
+				launchActivity(StartChallenge.class);
 				break;
 			case R.id.btBestScore:
-				launchActivityFromClass(BestScores.class);
+				launchActivity(BestScores.class);
 				break;
 			case R.id.ButtonDes:
 				Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://search?q=pub:\"Kayvan nj\""));
 				startActivity(i);
 				break;
 			case R.id.ButtonMusic:
-				launchActivityFromClass(NasionalAlanthem.class);
+				launchActivity(NasionalAlanthem.class);
 				break;
 			default:
 				break;
