@@ -1,26 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.k1.pack.statesFree" android:versionName="2.1" android:versionCode="3">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <application android:label="@string/app_name" android:icon="@drawable/logo1" android:debuggable="true">
-<activity android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:name="Start" android:finishOnCloseSystemDialogs="true" android:noHistory="false">
-            
-       
-<intent-filter>
+    package="com.k1.pack.statesFree"
+    android:versionCode="4"
+    android:versionName="3.0.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" >
+        <activity
+            android:name=".Activities.Start"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:noHistory="false"
+            android:screenOrientation="landscape" >
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-</activity>
+        </activity>
+        <activity
+            android:name=".Activities.StartChallenge"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.Challenge"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.Res"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.BestScores"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:finishOnCloseSystemDialogs="true"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.NasionalAlanthem"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".Activities.ResForFullAnswer"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="landscape" >
+        </activity>
+    </application>
 
-    <activity android:name="StartChallenge" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
-<activity android:name="Challenge" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
-<activity android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:name="Res" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
-<activity android:name="BestScores" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation" android:screenOrientation="landscape" android:noHistory="true" android:finishOnCloseSystemDialogs="true"></activity>
-<activity android:name="Description" android:label="@string/app_name" android:screenOrientation="landscape" android:noHistory="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout"></activity>
-<activity android:name="NasionalAlanthem" android:noHistory="true" android:label="@string/app_name" android:screenOrientation="landscape"></activity>
-<activity android:name="ResForFullAnswer" android:noHistory="true" android:label="@string/app_name" android:screenOrientation="landscape"></activity>
-</application>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" >
+    </uses-sdk>
 
-
-<uses-sdk android:targetSdkVersion="17" android:minSdkVersion="7"></uses-sdk>
-</manifest> 
+</manifest>

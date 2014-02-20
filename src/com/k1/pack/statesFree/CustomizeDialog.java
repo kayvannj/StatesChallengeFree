@@ -32,7 +32,6 @@ public class CustomizeDialog extends Dialog implements android.view.View.OnClick
 	
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
 		dismiss();
 	}
 }

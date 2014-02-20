@@ -181,7 +181,7 @@ public class Challenge extends MainActivity implements OnClickListener {
 				json.put("Incorrect",1);
 				json.put("Missed","Chose "+opt+" instead of "+ans);
 			}
-			Start.mixpanel.track("Challenge Results", new JSONObject("input"));
+			Start.mixpanel.track("Challenge Results", json);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}

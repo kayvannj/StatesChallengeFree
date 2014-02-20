@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgstates2"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulation"
+            android:textColor="#87F717"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewWrongAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You had no wrong answer"
+            android:textColor="#FF00FF"
+            android:textSize="22sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/TextViewRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@+id/TextView02"
+            android:textColor="@color/w"
+            android:textSize="18dp" >
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <Button
+                    android:id="@+id/try_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_button"
+                    android:text="Try Again"
+                    android:layout_marginRight="20px"
+                    android:textColor="@color/w" />
+
+                <Button
+                    android:id="@+id/bt_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button"
+                    android:text="Give us Feedback" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
