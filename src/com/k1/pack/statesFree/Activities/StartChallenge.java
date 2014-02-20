@@ -19,10 +19,6 @@ public class StartChallenge extends MainActivity implements OnClickListener {
 	Button		btStartChallenge;
 	SeekBar		mSeekBar;
 
-	/**
-	 * Called when the activity is first created. Responsible for initializing
-	 * the UI.
-	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 

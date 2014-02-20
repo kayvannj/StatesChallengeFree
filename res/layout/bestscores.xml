@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bgstates2"><TextView android:layout_height="wrap_content" android:text="test" android:textColor="@color/w" android:layout_alignParentTop="true" android:layout_width="fill_parent" android:id="@+id/bestScoreText1" android:textSize="30dp"></TextView><ListView android:id="@+id/ListView01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/bestScoreText1" android:divider="@color/w" android:dividerHeight="1dp">
-</ListView><Button android:layout_height="wrap_content" android:text="Reset All Scores" android:id="@+id/ResetScores" android:layout_width="fill_parent" android:layout_alignParentBottom="true"></Button></RelativeLayout>
